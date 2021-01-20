@@ -21,7 +21,7 @@ pipeline{
                  
                  stage ('Check logs') {
                     steps {
-                        shared-library ('WARNING', 5)
+                        filterLogs ('WARNING', 5)
                     }
                 }
 		
